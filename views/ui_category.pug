@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        table(border='1px')
+            th='Category'
+            th="Description"
+            each c in categories 
+                tr 
+                    td
+                        a(href="/category/"+c.CategoryID)=c.CategoryName 
+                    td=c.Description

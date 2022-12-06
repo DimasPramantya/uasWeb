@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        table(border='1px')
+            tr
+                th='ProductID'
+                th='ProductName'
+                th='SupplierID'
+                th='CategoryID'
+                th='QuantityPerUnit'
+                th='UnitPrice'
+                th='UnitsInStock'
+                th='UnitsOnOrder'
+                th='ReorderLevel'
+                th='Discontinued'
+            tr 
+                td=produk.ProductID
+                td=produk.ProductName 
+                td=produk.SupplierID 
+                td=produk.CategoryID 
+                td=produk.QuantityPerUnit 
+                td=produk.UnitPrice 
+                td=produk.UnitsInStock 
+                td=produk.UnitsOnOrder 
+                td=produk.ReorderLevel 
+                td=produk.Discontinued 
+        

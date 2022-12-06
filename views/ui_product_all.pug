@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+         table(border='1px')
+            tr
+                th='Id'
+                th='Nama'
+                th='Harga'
+                
+            each p in produk
+                tr 
+                    td=p.ProductID
+                    td
+                        a(href="/detail-produk/"+p.ProductID)=p.ProductName
+                    td='$'+p.UnitPrice  
